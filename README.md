@@ -1,4 +1,4 @@
-### Python Challenge: Module 3
+# Python Challenge: Module 3
 
 ## Objective
 The code used in this challenge dynamically references the data in their respective datasets to produce formatted files that can be used for data analysis and more practical purposes. It was coded in such a way to allow for future (and potentially revised or updated) datasets that follow the same conventions in their csvs to automatically produce calculations and format the information in a more palatable way.
