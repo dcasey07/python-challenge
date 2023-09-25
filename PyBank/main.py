@@ -7,8 +7,6 @@ budgetcsv = os.path.join("Resources", "budget_data.csv")
 
 # Create lists to store the data from the budget_data csv
 date = []
-# profit = []
-# losses = []
 profit_losses = []
 
 
