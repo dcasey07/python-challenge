@@ -20,11 +20,12 @@ with open(budgetcsv) as csvfile:
     for row in csvreader:
         date.append(row[0])
         profit_losses.append(int(row[1]))
-# Initialize a dynamic data point for the months in the dataset using the number of rows in the csv
+
+# Initialize a dynamic datapoint for the months in the dataset using the number of rows in the csv
 totalmonths = len(date)
+
 # Initialize a dynamic calculation of the revenue
 totalrevenue = sum(profit_losses)
-
 
 # Initialize variables to keep track of the month to month changes
 total_mtm_change = 0
@@ -56,12 +57,13 @@ for i in range(len(profit_losses) - 1):
         average_change = total_mtm_change / mtm_counter
     else:
         average_change = 0
+
 # Initialize formatted output data from the loop
 avg_mtm_change = round(average_change, 2)
 format_max_change = round(max_change, 2)
 format_min_change = round(min_change, 2)
 
-# Print the output data into a formatted analysis report
+# Print the output data into a formatted Financial Analysis report
 print("\n")
 print("Financial Analysis")
 print("\n")
@@ -74,9 +76,9 @@ print(f"Greatest Increase in Profits: {date[max_row_ref]} ${format_max_change}")
 print(f"Greatest Decrease in Profits: {date[min_row_ref]} ${format_min_change}")
 
 
-# Open and generate a text file to print the financial analysis to the Analysis folder
+# Open and generate a text file to print the Financial Analysis to the Analysis folder
 with open(os.path.join("Analysis", "Financial_Analysis.txt"), "w") as txt:
-    # Transpose all of the print lines into the file so it updates with every new entry of the analysis
+    # Transpose all of the print lines into the file so it updates with every new entry of budget data
     txt.write("\n")
     txt.write("Financial Analysis\n")
     txt.write("\n")
