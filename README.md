@@ -9,4 +9,4 @@ In order to pull the highest value from the dictionary in the election results, 
 https://www.askpython.com/python/dictionary/key-maximum-value-dictionary
 
 ## Notes
-I was pushing to the master branch of this repository the entire time, so I switched the default branch from main to master. 
+I was pushing to the master branch of this repository the entire time, so I switched the default branch from main to master. Another note is that I had an idea to include a voter_fraud check and was building on this idea with a friend outside of class, but due to time constraints scrapped the idea. Although it did seem like a fun automation that could be handy for a dataset like that.
