@@ -5,5 +5,8 @@ The code used in this challenge dynamically references the data in their respect
 
 ## Attributions
 
-In order to pull the highest value from the dictionary in the election results, I used the max() function that utilizes key= to reference the dictionary the data was pulled from. I pulled this concept from the resource below:
-    https://www.askpython.com/python/dictionary/key-maximum-value-dictionary
+In order to pull the highest value from the dictionary in the election results, I used the max() function that utilizes key= to reference the dictionary the data was pulled from. I pulled this concept from the following resource:
+https://www.askpython.com/python/dictionary/key-maximum-value-dictionary
+
+## Notes
+I was pushing to the master branch of this repository the entire time, so I switched the default branch from main to master. 
