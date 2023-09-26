@@ -28,20 +28,6 @@ with open(electioncsv) as csvfile:
         county.append(row[1])
         candidate.append(row[2])
 
-# Initialize a dynamic datapoint for the total number of votes cast
-# def fraudcheck(voter_id):
-#     citizen = set()
-#     duplicate = set()
-#     for row in voter_id:
-#         if row in citizen:
-#             duplicate.add(row)
-#         else:
-#             citizen.add(row)
-#     return duplicate
-# fraudvotes = fraudcheck(voter_id)
-# if fraudvotes = any
-#     print()
-
 # Initialize a dynamic value for the total number of votes cast based on the number of voter IDs in the dataset
 totalvotes = len(voter_id)
 
@@ -74,7 +60,7 @@ for name in unique_candidate:
     # Format the calculation to 3 decimal places
     formatted_pct_votes = round(percentage_votes, 3)
     # Print each result
-    print(f'{name}: {formatted_pct_votes}% ({vote_count[name]})')
+    print(f"{name}: {formatted_pct_votes}% ({vote_count[name]})")
 
 # Print the winner of the election
 print("\n----------------------------\n")
@@ -96,7 +82,7 @@ with open(os.path.join("Analysis", "Election_Results.txt"), "w") as txt:
     for name in unique_candidate:
         percentage_votes = (vote_count[name] / totalvotes) * 100
         formatted_pct_votes = round(percentage_votes, 3)
-        txt.write(f'{name}: {formatted_pct_votes}% ({vote_count[name]})\n')
+        txt.write(f"{name}: {formatted_pct_votes}% ({vote_count[name]})\n")
     txt.write("\n----------------------------\n")
     txt.write("\n")
     txt.write(f"Winner: {winner}\n")
